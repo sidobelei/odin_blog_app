@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: mysite
+    name: odin-blog-app
     runtime: ruby
     plan: free
     buildCommand: './bin/render-build.sh'
@@ -16,5 +16,5 @@ services:
       - key: WEB_CONCURRENCY
         value: 2 # Recommended default
 databases:
-  - name: mysite-db
+  - name: odin-blog-app-db
     plan: free
