@@ -81,7 +81,7 @@ test:
 production:
   primary: &primary_production
     <<: *default
-    database: odin_blog_app_production
+    database: odin_blog_app_production_gxsc
     username: odin_blog_app
     password: <%= ENV['DATABASE_URL'] %>
   cache:
