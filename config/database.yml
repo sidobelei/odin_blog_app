@@ -83,7 +83,7 @@ production:
     <<: *default
     database: odin_blog_app_production
     username: odin_blog_app
-    password: <%= ENV["ODIN_BLOG_APP_DATABASE_PASSWORD"] %>
+    password: <%= ENV['DATABASE_URL'] %>
   cache:
     <<: *primary_production
     database: odin_blog_app_production_cache
